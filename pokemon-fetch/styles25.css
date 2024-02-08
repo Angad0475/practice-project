@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    margin:100px;
+    padding:150px
+}
+.button{
+    position:relative;
+    top:30px;
+    width:10vw;
+    border-radius: 30px;
+    transition: background-color 0.1s ease-in, width 0.1s ease-in,transform 0.1s ease-in;
+    padding:10px;
+}
+.name{
+    position:relative;
+    top:10px;
+    width:20vw;
+    height:05vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding:10px
+}
+.button:hover{
+     background-color:wheat;
+     transform: scale(1.5,1.5);
+     width:10vw;
+     border:3px solid black;
+     cursor: pointer;
+    
+}
+.name:hover{
+    border:4px solid orange;
+}
+@media  (max-width:640px){
+    .button,.name{
+
+        display:flex;
+        align-items: center;
+        width:40vw;
+    }
+}
